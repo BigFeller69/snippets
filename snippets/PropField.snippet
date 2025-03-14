@@ -1,0 +1,35 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>FieldProp</Title>
+		<Author>Quinten</Author>
+		<Shortcut>FPR</Shortcut>
+		<Description>For making a field with a property</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>NameField</ID>
+				<Default>NameField</Default>
+				<ToolTip>the name</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>NameProp</ID>
+				<Default>NameProp</Default>
+				<ToolTip>the name</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>Type</ID>
+				<Default>Type</Default>
+				<ToolTip>the type</ToolTip>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[private $Type$ _$NameField$;
+        public $Type$ $NameProp$
+        {
+			get	=> _$NameField$;
+            set => _$NameField$ = value;
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>

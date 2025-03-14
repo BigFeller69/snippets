@@ -1,0 +1,41 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>Inset Wrapper</Title>
+		<Author>Quinten</Author>
+		<Shortcut>IWrapper</Shortcut>
+		<Description>A wrapper to insert somethin into your database</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>class</ID>
+				<ToolTip>the name of the class</ToolTip>
+				<Default>class</Default>
+			</Literal>
+			<Literal>
+				<ID>object</ID>
+				<ToolTip>the name of the object</ToolTip>
+				<Default>object</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[public void Add($class$ $object$)
+        {
+            try
+            {
+                _connection.Open();
+                //add your columns and values here
+                SqlCommand cmd = new SqlCommand("Insert Into TABLE (COL1,COL2,...) VALUES (@VALUE1,@VALUE2,...)", _connection);
+                cmd.Parameters.AddWithValue("@VALUE1", $object$.property1);
+                cmd.Parameters.AddWithValue("@VALUE2", $object$.property2);
+
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>

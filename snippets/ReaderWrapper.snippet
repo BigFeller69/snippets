@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Reading wrapper</Title>
+			<Author>Quinten</Author>
+			<Shortcut>RWrapper</Shortcut>
+			<Description>a wrapper for reading data from a database</Description>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>class</ID>
+					<ToolTip>class name</ToolTip>
+					<Default>class</Default>
+				</Literal>
+				<Literal>
+					<ID>query</ID>
+					<ToolTip>the query</ToolTip>
+					<Default>SELECT * FROM TABLE</Default>
+				</Literal>
+				<Literal>
+					<ID>method</ID>
+					<ToolTip>the name of the method</ToolTip>
+					<Default>Get</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[public List<$class$> $method$()
+        {
+            try
+            {
+                List<$class$> list = [];
+
+                _connection.Open();
+                //put the right command in the quotes
+                SqlCommand cmd = new SqlCommand("$query$", _connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        //put the values here and add an object to the list
+                        //EXAMPLE
+
+                        //int id = (int)reader["id"];
+                        //string name = (string)reader["name"];
+                        //Person p = new(id,name);
+                        //list.Add(p);
+                    }
+                }
+                return list;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
+</CodeSnippets>

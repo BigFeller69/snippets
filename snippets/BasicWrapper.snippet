@@ -1,0 +1,38 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>Wrapper</Title>
+		<Author>Quinten</Author>
+		<Shortcut>BWrapper</Shortcut>
+		<Description>basic wrapper for databases</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>Class</ID>
+				<ToolTip>The class name</ToolTip>
+				<Default>Class</Default>
+			</Literal>
+			<Literal>
+				<ID>Method</ID>
+				<ToolTip>The name of the method</ToolTip>
+				<Default>Method</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[public List<$Class$> $Method$()
+        {
+            List<$Class$> list = [];
+            try
+            {
+                _connection.Open();
+
+            }
+            finally
+            {
+                _connection.Close();
+            }
+            return list;
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
