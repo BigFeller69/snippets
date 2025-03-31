@@ -1,0 +1,85 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>UpdateWrapper</Title>
+		<Author>Quinten</Author>
+		<Shortcut>UWrapper</Shortcut>
+		<Description>update wrapper for databases</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>function</ID>
+				<ToolTip>The name of the function</ToolTip>
+				<Default>Update</Default>
+			</Literal>
+			<Literal>
+				<ID>class</ID>
+				<ToolTip>The name of the class</ToolTip>
+				<Default>class</Default>
+			</Literal>
+			<Literal>
+				<ID>object</ID>
+				<ToolTip>The name of your object</ToolTip>
+				<Default>object</Default>
+			</Literal>
+			<Literal>
+				<ID>table</ID>
+				<ToolTip>the table to update</ToolTip>
+				<Default>TABLE</Default>
+			</Literal>
+			<Literal>
+				<ID>column1</ID>
+				<ToolTip>the first column</ToolTip>
+				<Default>column1</Default>
+			</Literal>
+			<Literal>
+				<ID>column2</ID>
+				<ToolTip>the second column</ToolTip>
+				<Default>column2</Default>
+			</Literal>
+			<Literal>
+				<ID>value1</ID>
+				<ToolTip>the first value</ToolTip>
+				<Default>value1</Default>
+			</Literal>
+			<Literal>
+				<ID>value2</ID>
+				<ToolTip>the second value</ToolTip>
+				<Default>value2</Default>
+			</Literal>
+			<Literal>
+				<ID>property1</ID>
+				<ToolTip>the first property</ToolTip>
+				<Default>property1</Default>
+			</Literal>
+			<Literal>
+				<ID>property2</ID>
+				<ToolTip>the second property</ToolTip>
+				<Default>property2</Default>
+			</Literal>
+			<Literal>
+				<ID>CONDITION</ID>
+				<ToolTip>the condition</ToolTip>
+				<Default>CONDITION</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[public void $function$($class$ $object$)
+        {
+            try
+            {
+                _connection.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE $table$ SET $column1$ = @$value1$, $column2$ = @$value2$,... WHERE $CONDITION$");
+                cmd.Parameters.AddWithValue("@$value1$", $object$.$property1$);
+                cmd.Parameters.AddWithValue("@$value2$", $object$.$property2$);
+
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
