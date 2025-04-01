@@ -34,8 +34,8 @@
 
                 _connection.Open();
                 //put the right command in the quotes
-                SqlCommand cmd = new SqlCommand("$query$", _connection);
-                SqlDataReader reader = cmd.ExecuteReader();
+                using SqlCommand cmd = new SqlCommand("$query$", _connection);
+                using SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
                     while (reader.Read())

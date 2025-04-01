@@ -25,7 +25,7 @@
             {
                 _connection.Open();
                 //add your columns and values here
-                SqlCommand cmd = new SqlCommand("Insert Into TABLE (COL1,COL2,...) VALUES (@VALUE1,@VALUE2,...)", _connection);
+                using SqlCommand cmd = new SqlCommand("Insert Into TABLE (COL1,COL2,...) VALUES (@VALUE1,@VALUE2,...)", _connection);
                 cmd.Parameters.AddWithValue("@VALUE1", $object$.property1);
                 cmd.Parameters.AddWithValue("@VALUE2", $object$.property2);
 

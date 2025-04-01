@@ -69,7 +69,7 @@
             try
             {
                 _connection.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE $table$ SET $column1$ = @$value1$, $column2$ = @$value2$,... WHERE $CONDITION$");
+                using SqlCommand cmd = new SqlCommand("UPDATE $table$ SET $column1$ = @$value1$, $column2$ = @$value2$,... WHERE $CONDITION$");
                 cmd.Parameters.AddWithValue("@$value1$", $object$.$property1$);
                 cmd.Parameters.AddWithValue("@$value2$", $object$.$property2$);
 
