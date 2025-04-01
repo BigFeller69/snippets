@@ -1,0 +1,29 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>connection</Title>
+		<Author>Quinten</Author>
+		<Shortcut>cnct</Shortcut>
+		<Description>to connect your database</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>class</ID>
+				<Default>class</Default>
+				<ToolTip>the name of your class</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>connectionstring</ID>
+				<Default>connectionString</Default>
+				<ToolTip>your connectionString</ToolTip>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[private SqlConnection _connection;
+			public $class$()
+			{
+				_connection = new($connectionstring$);
+			}]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
