@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|c:\\users\\quint\\onedrive\\documents\\github\\snippets\\testing file\\testing file\\db\\personmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|solutionrelative:db\\personmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|c:\\users\\quint\\onedrive\\documents\\github\\snippets\\testing file\\testing file\\db\\sex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|solutionrelative:db\\sex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|c:\\users\\quint\\onedrive\\documents\\github\\snippets\\testing file\\testing file\\db\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|solutionrelative:db\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD7CAAA-75AA-45CD-B76B-89E56FC544B6}|testing file\\testing file.csproj|c:\\users\\quint\\onedrive\\documents\\github\\snippets\\testing file\\testing file\\testing file\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD7CAAA-75AA-45CD-B76B-89E56FC544B6}|testing file\\testing file.csproj|solutionrelative:testing file\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|c:\\users\\quint\\onedrive\\documents\\github\\snippets\\testing file\\testing file\\db\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3F89C7C-9AEF-4CE6-B826-42C22DA2EDA2}|db\\db.csproj|solutionrelative:db\\dbinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonMapper.cs",
+              "DocumentMoniker": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\PersonMapper.cs",
+              "RelativeDocumentMoniker": "db\\PersonMapper.cs",
+              "ToolTip": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\PersonMapper.cs",
+              "RelativeToolTip": "db\\PersonMapper.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwDYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:54:21.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sex.cs",
+              "DocumentMoniker": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\Sex.cs",
+              "RelativeDocumentMoniker": "db\\Sex.cs",
+              "ToolTip": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\Sex.cs",
+              "RelativeToolTip": "db\\Sex.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:52:21.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\Person.cs",
+              "RelativeDocumentMoniker": "db\\Person.cs",
+              "ToolTip": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\Person.cs",
+              "RelativeToolTip": "db\\Person.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wDIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:51:34.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBInfo.cs",
+              "DocumentMoniker": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\DBInfo.cs",
+              "RelativeDocumentMoniker": "db\\DBInfo.cs",
+              "ToolTip": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\db\\DBInfo.cs",
+              "RelativeToolTip": "db\\DBInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAADyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:43:38.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\testing file\\Program.cs",
+              "RelativeDocumentMoniker": "testing file\\Program.cs",
+              "ToolTip": "C:\\Users\\quint\\OneDrive\\Documents\\GitHub\\snippets\\testing file\\testing file\\testing file\\Program.cs",
+              "RelativeToolTip": "testing file\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:42:45.033Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
