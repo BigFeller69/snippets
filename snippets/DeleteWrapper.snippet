@@ -1,0 +1,53 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>DeleteWrapper</Title>
+		<Author>Quinten</Author>
+		<Shortcut>DWrapper</Shortcut>
+		<Description>Delete wrapper for databases</Description>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>method</ID>
+				<Default>method</Default>
+				<ToolTip>de naam van de method</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>class</ID>
+				<Default>class</Default>
+				<ToolTip>de naam van de class</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>object</ID>
+				<Default>object</Default>
+				<ToolTip>de naam van uw object</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>table</ID>
+				<Default>TABLE</Default>
+				<ToolTip>de table waarin je iets wilt deleten</ToolTip>
+			</Literal>
+			<Literal>
+				<ID>check</ID>
+				<Default>conditie</Default>
+				<ToolTip>seek uw conditie hier in</ToolTip>
+			</Literal>
+		</Declarations>
+		<Code Language="CSharp">
+			<![CDATA[public void $method$($class$ $object$)
+        {
+            try
+            {
+                _connection.Open();
+                using SqlCommand cmd = new SqlCommand("DELETE FROM $table$ WHERE $check$", _connection);
+                cmd.Parameters.AddWithValue("@id",$object$.Id);
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
